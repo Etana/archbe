@@ -42,4 +42,4 @@ with ThreadPoolExecutor(max_workers=6) as executor:
             tile_num += 1
 
 img.save(output, 'JPEG')
-print('OK file saved to {}'.format(output), file=sys.stderr)
+print('OK image (scale 1/{}) saved to {}'.format(scalefactor, output), file=sys.stderr)
